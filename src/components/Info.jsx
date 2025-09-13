@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import Arrow from './Arrow';
+
 function Info() {
   return (
     <div className="info">
@@ -11,18 +14,48 @@ function Info() {
           <p>The advantage of hiring a workspace</p>
           <p>with us it gives you comfortable</p>
           <p>service and all-around facilities</p>
+          <div className="info-links">
+            <div>
+              <Link className="info-link" to="/signup">
+                More info
+              </Link>
+            </div>
+            <div>
+              <Arrow width={24} color="#e58411" />
+            </div>
+          </div>
         </div>
         <div>
           <h3>Affordable Price</h3>
           <p>You can get a workspace of the highest</p>
           <p>Quality at an affordable price and still </p>
           <p> enjoy the facilities that are only here</p>
+          <div className="info-links">
+            <div>
+              <Link className="info-link" to="/signup">
+                More info
+              </Link>
+            </div>
+            <div>
+              <Arrow width={24} color="#e58411" />
+            </div>
+          </div>
         </div>
         <div>
           <h3>Many Choices</h3>
           <p>We provide many unique workspace</p>
           <p>choices so that you can choose the</p>
           <p>workspace to your liking</p>
+          <div className="info-links">
+            <div>
+              <Link className="info-link" to="/signup">
+                More info
+              </Link>
+            </div>
+            <div>
+              <Arrow width={24} color="#e58411" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
