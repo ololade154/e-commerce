@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Cart from './cart';
@@ -5,6 +6,15 @@ import MenuIcon from './MenuIcon';
 import CloseIcon from './CloseIcon';
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  function openMenu() {
+    setIsOpen(true);
+  }
+
+  function closeMenu() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <div className="desktop-nav">
@@ -37,13 +47,23 @@ function NavBar() {
             <Logo />
           </div>
           <div className="menu-icon">
-            <MenuIcon className="cart-icon" width={42} color="white" />
+            <MenuIcon
+              onClick={openMenu}
+              className="cart-icon"
+              width={42}
+              color="white"
+            />
           </div>
         </div>
         <div>
-          <ul className="nav-link">
+          <ul className={`nav-link ${isOpen ? 'open' : ''}`}>
             <li className="nav-item">
-              <CloseIcon className="cart-icon" width={30} color="white" />
+              <CloseIcon
+                onClick={closeMenu}
+                className="cart-icon"
+                width={30}
+                color="white"
+              />
             </li>
             <li className="nav-item ">
               <Link to="#">Furniture</Link>

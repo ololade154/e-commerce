@@ -1,11 +1,11 @@
-// import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
-import HeroContent from '../components/HeroContent';
+import HomeContent from '../components/HomeContent';
 
 function HomePage() {
   return (
     <main className="main">
       <Hero />
+      <HomeContent />
     </main>
   );
 }

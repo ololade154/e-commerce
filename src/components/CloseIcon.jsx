@@ -1,6 +1,9 @@
 function CloseIcon(prop) {
   return (
-    <div style={{ width: prop.width, color: prop.color }}>
+    <div
+      onClick={prop.onClick}
+      style={{ width: prop.width, color: prop.color }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
