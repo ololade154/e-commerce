@@ -12,9 +12,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 } */
-body {
+/* body {
   border: 2px solid red;
-}
+} */
 .hero {
   background-image: url('/assets/background.svg');
   background-repeat: no-repeat;
@@ -491,7 +491,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -500,7 +500,7 @@ body {
     border: 2px solid #eeeeee;
     border-radius: 15px;
     overflow: hidden;
-    width: 180px;
+    width: 300px;
     transition: transform 0.3s;
   }
 
@@ -521,7 +521,7 @@ body {
   }
 
   .furniture-details h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 5px 0;
     color: #0d1b39;
     font-weight: 600;
@@ -530,17 +530,15 @@ body {
   .furniture-details p {
     margin: 1px 0;
     color: #8d8d8d;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
   }
 
   .furniture-price button {
     padding: 10px 10px;
-
     background: black;
     color: white;
     border: none;
-
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
@@ -554,7 +552,7 @@ body {
     justify-content: space-between;
   }
   .furniture-price p {
-    font-size: 14px;
+    font-size: 18px;
     color: #0d1b39;
     font-weight: 600;
   }
