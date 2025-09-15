@@ -16,7 +16,7 @@ body {
   border: 2px solid red;
 }
 .hero {
-  background-image: url('/background.svg');
+  background-image: url('/assets/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -170,6 +170,115 @@ body {
     text-decoration: none;
     font-size: 15px;
     color: #e58411;
+  }
+  .product-display {
+    margin: 0 auto;
+    padding: 50px 80px;
+    background-color: #f7f7f7;
+  }
+
+  .product-display h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 28px;
+  }
+
+  .display-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #eeeeee;
+    border: 2px solid #eeeeee;
+    padding: 5px 15px;
+    border-radius: 30px;
+    width: 32%;
+    margin: 0 auto 45px;
+  }
+  .display-content div {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .display-content div:hover {
+    background: #ffffff;
+  }
+  .display-content span {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .furniture-data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .furniture-item {
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    overflow: hidden;
+
+    width: 220px;
+    transition: transform 0.3s;
+  }
+
+  .furniture-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .furniture-item img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .furniture-details {
+    background-color: #ffffff;
+    padding: 12px;
+  }
+
+  .furniture-details h2 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #0d1b39;
+    font-weight: 600;
+  }
+
+  .furniture-details p {
+    margin: 1px 0;
+    color: #8d8d8d;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .furniture-price button {
+    padding: 10px 10px;
+
+    background: black;
+    color: white;
+    border: none;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .furniture-details button:hover {
+    background: #444;
+  }
+  .furniture-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .furniture-price p {
+    font-size: 14px;
+    color: #0d1b39;
+    font-weight: 600;
   }
 }
 
@@ -339,5 +448,114 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: #e58411;
+  }
+  .product-display {
+    margin: 0 auto;
+    padding: 16px 18px;
+    background-color: #f7f7f7;
+  }
+
+  .product-display h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .display-content {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: #eeeeee;
+
+    border: 2px solid #eeeeee;
+    padding: 5px 17px;
+    border-radius: 30px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .display-content div {
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .display-content div:hover {
+    background: #ffffff;
+  }
+  .display-content span {
+    color: #1e1e1e;
+    font-size: 16px;
+  }
+  .furniture-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .furniture-item {
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 180px;
+    transition: transform 0.3s;
+  }
+
+  .furniture-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .furniture-item img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .furniture-details {
+    background-color: #ffffff;
+    padding: 12px;
+  }
+
+  .furniture-details h2 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #0d1b39;
+    font-weight: 600;
+  }
+
+  .furniture-details p {
+    margin: 1px 0;
+    color: #8d8d8d;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .furniture-price button {
+    padding: 10px 10px;
+
+    background: black;
+    color: white;
+    border: none;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .furniture-details button:hover {
+    background: #444;
+  }
+  .furniture-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .furniture-price p {
+    font-size: 14px;
+    color: #0d1b39;
+    font-weight: 600;
   }
 }
