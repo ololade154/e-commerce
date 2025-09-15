@@ -1,4 +1,5 @@
 import furnitureData from '../Data/FurnitureData';
+import Button from './Button';
 function ProductDisplay() {
   return (
     <div className="product-display">
@@ -33,7 +34,7 @@ function ProductDisplay() {
                     <p>{item.price}</p>
                   </div>
                   <div>
-                    <button>+</button>
+                    <Button />
                   </div>
                 </div>
               </div>
