@@ -394,6 +394,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    line-height: 0;
   }
   .info {
     display: flex;
