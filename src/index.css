@@ -285,6 +285,23 @@ body {
     color: #0d1b39;
     font-weight: 600;
   }
+  .view-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  .view-links > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #e58411;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
@@ -566,5 +583,22 @@ body {
     font-size: 18px;
     color: #0d1b39;
     font-weight: 600;
+  }
+  .view-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .view-links > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #e58411;
   }
 }

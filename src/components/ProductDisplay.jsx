@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import furnitureData from '../Data/FurnitureData';
 import Button from './Button';
+import Arrow from './Arrow';
 function ProductDisplay() {
   return (
     <div className="product-display">
@@ -40,6 +42,16 @@ function ProductDisplay() {
               </div>
             </div>
           ))}
+      </div>
+      <div className="view-links">
+        <div>
+          <Link className="view-link" to="#">
+            View All
+          </Link>
+        </div>
+        <div>
+          <Arrow className="arrow-icon" width={24} color="#e58411" />
+        </div>
       </div>
     </div>
   );
