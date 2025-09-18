@@ -2,6 +2,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import Hero from '../components/Hero';
 import HomeContent from '../components/HomeContent';
 import MaterialSection from '../components/MaterialSection';
+import Testimonial from '../components/Testimonial';
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <HomeContent />
       <ExperienceSection />
       <MaterialSection />
+      <Testimonial />
     </main>
   );
 }
