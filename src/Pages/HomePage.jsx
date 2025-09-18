@@ -1,6 +1,7 @@
 import ExperienceSection from '../components/ExperienceSection';
 import Hero from '../components/Hero';
 import HomeContent from '../components/HomeContent';
+import MaterialSection from '../components/MaterialSection';
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <Hero />
       <HomeContent />
       <ExperienceSection />
+      <MaterialSection />
     </main>
   );
 }
