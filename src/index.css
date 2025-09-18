@@ -7,14 +7,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-/* html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-/* body {
-  border: 2px solid red;
-} */
+
 .hero {
   background-image: url('/assets/background.svg');
   background-repeat: no-repeat;
@@ -501,6 +494,9 @@ body {
     color: #1e1e1e;
     font-weight: 300;
   }
+  /* .footer-logo {
+    color: red;
+  } */
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
