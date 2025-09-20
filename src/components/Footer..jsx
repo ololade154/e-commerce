@@ -7,7 +7,9 @@ function Footer() {
     <div className="footer">
       <div className="footer-info">
         <div>
-          <Logo color="#1E1E1E" fontSize="19px" />
+          <div className="footer-logo">
+            <Logo />
+          </div>
           <p>The advantage of hiring a workspace with </p>
           <p>us is that it gives you confortable service</p>
           <p>and all-around facilities</p>

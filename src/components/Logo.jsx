@@ -1,9 +1,6 @@
-function Logo(prop) {
+function Logo() {
   return (
-    <div
-      className="logo"
-      style={{ color: prop.color, fontSize: prop.fontSize }}
-    >
+    <div>
       <h1>Panto</h1>
     </div>
   );
