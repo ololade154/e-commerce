@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-info">
         <div>
-          <Logo className="footer-logo" color="white" />
+          <Logo color="#1E1E1E" fontSize="19px" />
           <p>The advantage of hiring a workspace with </p>
           <p>us is that it gives you confortable service</p>
           <p>and all-around facilities</p>
@@ -27,23 +27,23 @@ function Footer() {
         <div className="social-links">
           <Link to="#">Follow Us</Link>
           <div className="social-link">
-            <Cart width={22} />
+            <Cart width={22} className="cart" />
             <Link to="#">Facebook</Link>
           </div>
           <div className="social-link">
-            <Cart width={22} />
+            <Cart width={22} className="cart" />
             <Link to="#">twitter</Link>
           </div>
           <div className="social-link">
-            <Cart width={22} />
+            <Cart width={22} className="cart" />
             <Link to="#">Instagram</Link>
           </div>
         </div>
       </div>
       <div className="copyright">
         <div>copyright</div>
-        <div>
-          <div>Terms and condition</div>
+        <div className="policy">
+          <div>Terms and conditions</div>
           <div>Privacy policy</div>
         </div>
       </div>
