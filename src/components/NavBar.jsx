@@ -75,7 +75,7 @@ function NavBar() {
               />
             </li>
             <li className="nav-item ">
-              <Link to="#">Furniture</Link>
+              <Link to="/SignUp">Furniture</Link>
             </li>
             <li className="nav-item">
               <Link to="#">Shop</Link>
