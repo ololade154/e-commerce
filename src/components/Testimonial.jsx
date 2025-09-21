@@ -42,7 +42,6 @@ function Testimonial() {
               <p>"Sangat terjangkau untuk kantong</p>
               <p>saya yang tidak terlalu banyak</p>
               <p>saya yang tidak terlalu banyak"</p>
-
               <div className="stars">⭐⭐⭐⭐⭐</div>
             </div>
           </div>

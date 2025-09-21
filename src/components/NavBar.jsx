@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 import Logo from './Logo';
 import Cart from './cart';
 import MenuIcon from './MenuIcon';
@@ -14,17 +15,22 @@ function NavBar() {
   function closeMenu() {
     setIsOpen(false);
   }
+  const { pathname } = useLocation();
 
   return (
     <>
-      <div className="desktop-nav">
+      <div
+        className={`desktop-nav ${
+          pathname !== '/' ? 'non-transparent' : 'transparent'
+        }`}
+      >
         <div className="logo">
           <Logo />
         </div>
         <div>
           <ul className="nav-link">
             <li className="nav-item ">
-              <Link to="#">Furniture</Link>
+              <Link to="/SignUp">Furniture</Link>
             </li>
             <li className="nav-item">
               <Link to="#">Shop</Link>
