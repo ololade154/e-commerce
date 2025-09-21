@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
 import Logo from './Logo';
 import Cart from './cart';
 import MenuIcon from './MenuIcon';
@@ -48,7 +47,11 @@ function NavBar() {
         </div>
       </div>
       <div className="mobile-nav">
-        <div className="mobile-navigation">
+        <div
+          className={`mobile-navigation ${
+            pathname !== '/' ? 'non-transparent' : 'transparent'
+          }`}
+        >
           <div className="logo">
             <Logo />
           </div>

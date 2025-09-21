@@ -28,11 +28,11 @@
     padding: 20px 80px;
     margin-bottom: 55px;
   }
-  .transparent {
+  .desktop-nav.transparent {
     background-color: transparent;
   }
-  .non-transparent {
-    background-color: blue;
+  .desktop-nav.non-transparent {
+    background-color: #696969;
   }
   .mobile-nav {
     display: none;
@@ -579,15 +579,6 @@
     align-items: center;
     gap: 2rem;
   }
-  /* .signup-page {
-    background-color: #696969;
-  } */
-  /* .signup-nav {
-    background-color: #696969;
-    position: fixed;
-    width: 100%;
-    height: 85px;
-  } */
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
@@ -601,13 +592,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+
     height: 75px;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 15px 18px;
     margin-bottom: 8px;
+  }
+  .transparent {
+    background-color: transparent;
+  }
+  .non-transparent {
+    background-color: #696969;
   }
   .logo {
     font-size: 13px;
@@ -631,7 +628,7 @@
     transform: translateX(100%);
     width: 200px;
     height: 100vh;
-    background-color: black;
+    background-color: #696969;
     padding: 30px 20px;
     z-index: 9999;
     display: flex;
