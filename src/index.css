@@ -26,6 +26,8 @@
     top: 0;
     width: 100%;
     padding: 20px 80px;
+  }
+  .with-margin {
     margin-bottom: 55px;
   }
   .desktop-nav.transparent {
@@ -103,7 +105,7 @@
     font-size: 16px;
     background-color: transparent;
   }
-  input::placeholder {
+  .input input::placeholder {
     color: white;
     font-size: 15px;
     font-weight: 200;
@@ -578,6 +580,51 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+  }
+  .sign-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 100px;
+    border: 2px solid red;
+  }
+  .signup-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .input-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Extra right padding if the cart icon exists */
+  .input-container.with-icon .custom-input {
+    padding-right: 40px;
+  }
+
+  .input-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    border: 2px solid green;
+    cursor: pointer;
+    transform: translateY(-50%);
   }
 }
 

@@ -49,7 +49,7 @@ function NavBar() {
       <div className="mobile-nav">
         <div
           className={`mobile-navigation ${
-            pathname !== '/' ? 'non-transparent' : 'transparent'
+            pathname !== '/' ? 'non-transparent with-margin' : 'transparent'
           }`}
         >
           <div className="logo">
