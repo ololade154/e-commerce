@@ -1,3 +1,4 @@
+import StarRate from './StarRate';
 function Testimonial() {
   return (
     <div className="testimonial-section">
@@ -14,7 +15,9 @@ function Testimonial() {
               <p>“Terimakasih banyak, kini ruanganku</p>
               <p>menjadi lebih mewah dan terlihat</p>
               <p>mehal"</p>
-              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <div>
+                <StarRate />
+              </div>
             </div>
           </div>
         </div>
@@ -28,7 +31,7 @@ function Testimonial() {
               <p>"Makasih Panto, aku sekarang berasa</p>
               <p>tinggnal di apartment karena barang-</p>
               <p>barang yang terlihat mewah"</p>
-              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <StarRate />
             </div>
           </div>
         </div>
@@ -42,7 +45,7 @@ function Testimonial() {
               <p>"Sangat terjangkau untuk kantong</p>
               <p>saya yang tidak terlalu banyak</p>
               <p>saya yang tidak terlalu banyak"</p>
-              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <StarRate />
             </div>
           </div>
         </div>
