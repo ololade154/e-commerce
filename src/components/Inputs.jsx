@@ -59,7 +59,7 @@ function Inputs({
 
   return (
     <div
-      className={`input-container ${showEye ? 'with-icon' : ''}`}
+      className={`inputs-container ${showEye ? 'with-icon' : ''}`}
       style={{ width: width || '100%' }}
     >
       <input

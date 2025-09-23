@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Label from './Label';
 import Inputs from './Inputs';
+import Buttons from './Buttons';
 
 function SignSection() {
   return (
@@ -55,6 +56,13 @@ function SignSection() {
             </div>
           </div>
         </div>
+        <div className="check">
+          <Inputs type="checkbox" width="15px" />
+          <span>
+            I have read and agreed to the Terms of Service and Privacy Policy
+          </span>
+        </div>
+        <Buttons className="signup-button">Create Account</Buttons>
       </div>
 
       <div className="signup-image">

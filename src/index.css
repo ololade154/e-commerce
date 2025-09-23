@@ -105,6 +105,7 @@
     flex: 1;
     font-size: 16px;
     background-color: transparent;
+    color: #fff;
   }
   .input input::placeholder {
     color: white;
@@ -588,19 +589,24 @@
     justify-content: space-between;
     padding: 0px 0px 0px 100px;
   }
+  .sign-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .signup-detail {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: flex-start;
   }
   .details {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
   }
 
-  .input-container {
+  .inputs-container {
     position: relative;
     width: 100%;
     display: inline-block;
@@ -618,7 +624,7 @@
     box-sizing: border-box;
   }
 
-  .input-container.with-icon .custom-input {
+  .inputs-container.with-icon .custom-input {
     padding-right: 40px;
   }
 
@@ -638,13 +644,13 @@
     color: #696969;
   }
   .sign-details h1 {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
     color: #1e1e1e;
     font-size: 35px;
     font-weight: 700;
   }
   .sign-details p {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: #696969;
     font-size: 15px;
     font-weight: 400;
@@ -658,6 +664,33 @@
     color: #000;
     font-size: 15px;
     font-weight: 400;
+  }
+  .check {
+    margin-top: 0.5rem;
+  }
+  .signup-button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #282828;
+    border-radius: 50px;
+    outline: none;
+    background-color: #282828;
+    color: #fff;
+    margin-top: 1rem;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  .check span {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #696969;
   }
 }
 
