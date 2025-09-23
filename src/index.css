@@ -25,6 +25,7 @@
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1000;
     padding: 20px 80px;
   }
   .with-margin {
@@ -586,7 +587,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 0px 0px 100px;
-    border: 2px solid red;
   }
   .signup-detail {
     display: flex;
@@ -597,34 +597,67 @@
   .details {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
   }
+
   .input-container {
     position: relative;
     width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 
   .custom-input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 14px;
     font-size: 16px;
-    box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 50px;
+    outline: none;
+    box-sizing: border-box;
   }
 
-  /* Extra right padding if the cart icon exists */
   .input-container.with-icon .custom-input {
     padding-right: 40px;
   }
 
   .input-icon {
     position: absolute;
-    right: 5px;
+    right: 12px;
     top: 50%;
-    border: 2px solid green;
-    cursor: pointer;
     transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .form-label,
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+  }
+  .sign-details h1 {
+    margin-bottom: 0.7rem;
+    color: #1e1e1e;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .sign-details p {
+    margin-bottom: 3rem;
+    color: #696969;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .custom-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+  }
+  .signup-link {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
   }
 }
 
@@ -639,7 +672,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    z-index: 999;
     height: 75px;
     position: fixed;
     top: 0;

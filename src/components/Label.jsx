@@ -1,8 +1,4 @@
-function Label({ text }) {
-  return (
-    <div>
-      <label>{text}</label>
-    </div>
-  );
+function Label({ text, className }) {
+  return <label className={className}>{text}</label>;
 }
 export default Label;

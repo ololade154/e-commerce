@@ -8,59 +8,64 @@ function SignSection() {
       <div className="sign-details">
         <h1>Signup</h1>
         <p>
-          Already have an Account,
+          Already have an Account?
           <Link className="signup-link" to="#">
-            Login.
+            Login
           </Link>
         </p>
+
         <div className="signup-detail">
           <div className="details">
             <div>
-              <Label text="Full Name" />
-              <Inputs placeholder="michael joe" width="250px" />
+              <Label text="Full Name" className="form-label" />
+              <Inputs placeholder="michael joe" width="260px" type="text" />
             </div>
             <div>
               <Label text="Email" />
-              <Inputs placeholder="michael.joe@gmail.com" width="250px" />
+              <Inputs
+                placeholder="michael.joe@gmail.com"
+                width="260px"
+                type="email"
+              />
             </div>
           </div>
+
           <div className="details">
             <div>
-              <Label text="password" />
-              <div>
-                <Inputs
-                  placeholder="******"
-                  type="password"
-                  showCart={true}
-                  cartWidth={25}
-                  cartColor="red"
-                  onCartClick={() => alert('Cart clicked!')}
-                  width="250px"
-                />
-              </div>
+              <Label text="Password" />
+              <Inputs
+                placeholder="******"
+                type="password"
+                showEye={true}
+                eyeWidth={22}
+                eyeColor="#696969"
+                width="260px"
+              />
             </div>
             <div>
               <Label text="Confirm Password" />
               <Inputs
-                placeholder="*****"
+                placeholder="*******"
                 type="password"
-                showCart={true}
-                cartWidth={25}
-                cartColor="red"
-                width="250px"
+                showEye={true}
+                eyeWidth={22}
+                eyeColor="#696969"
+                width="260px"
               />
             </div>
           </div>
         </div>
       </div>
+
       <div className="signup-image">
         <img
           src="/assets/experience-image.svg"
-          alt="experience-image"
+          alt="experience"
           className="sign-image"
         />
       </div>
     </div>
   );
 }
+
 export default SignSection;
