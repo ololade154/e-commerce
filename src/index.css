@@ -609,13 +609,13 @@
   .inputs-container {
     position: relative;
     width: 100%;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0;
     padding: 0;
   }
 
   .custom-input {
-    width: 100%;
+    width: 260px;
     padding: 10px 14px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -706,7 +706,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    height: 75px;
+    height: 65px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -1301,5 +1301,120 @@
   }
   .signup-nav {
     background-color: #e58411;
+  }
+  .sign-section {
+    /* display: flex;
+    flex-direction: column; */
+
+    padding: 0px 15px 12px 15px;
+    margin-top: 65px;
+    border: 2px solid red;
+  }
+  .sign-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .signup-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .sign-image {
+    display: none;
+  }
+
+  .inputs-container {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .inputs-container.with-icon .custom-input {
+    padding-right: 40px;
+  }
+
+  .input-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .form-label,
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+  }
+  .sign-details h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: #1e1e1e;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .sign-details p {
+    margin-bottom: 1.7rem;
+    color: #696969;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .custom-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+  }
+  .signup-link {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .check {
+    margin-top: 0.5rem;
+  }
+  .signup-button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #282828;
+    border-radius: 50px;
+    outline: none;
+    background-color: #282828;
+    color: #fff;
+    margin-top: 1rem;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  .check span {
+    font-size: 9px;
+    line-height: 1.2;
+    color: #696969;
   }
 }

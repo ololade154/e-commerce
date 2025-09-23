@@ -53,6 +53,7 @@ function Inputs({
   showEye = false,
   eyeWidth,
   eyeColor,
+  className,
 }) {
   const [showPassword, setShowPassword] = useState(false);
   const togglePassword = () => setShowPassword(!showPassword);
@@ -63,7 +64,7 @@ function Inputs({
       style={{ width: width || '100%' }}
     >
       <input
-        className="custom-input"
+        className={className}
         placeholder={placeholder}
         type={showEye ? (showPassword ? 'text' : 'password') : type}
         style={{ height: height || '45px' }}

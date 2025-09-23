@@ -19,13 +19,17 @@ function SignSection() {
           <div className="details">
             <div>
               <Label text="Full Name" className="form-label" />
-              <Inputs placeholder="michael joe" width="260px" type="text" />
+              <Inputs
+                placeholder="michael joe"
+                type="text"
+                className="custom-input"
+              />
             </div>
             <div>
               <Label text="Email" />
               <Inputs
                 placeholder="michael.joe@gmail.com"
-                width="260px"
+                className="custom-input"
                 type="email"
               />
             </div>
@@ -40,7 +44,7 @@ function SignSection() {
                 showEye={true}
                 eyeWidth={22}
                 eyeColor="#696969"
-                width="260px"
+                className="custom-input"
               />
             </div>
             <div>
@@ -51,7 +55,7 @@ function SignSection() {
                 showEye={true}
                 eyeWidth={22}
                 eyeColor="#696969"
-                width="260px"
+                className="custom-input"
               />
             </div>
           </div>
