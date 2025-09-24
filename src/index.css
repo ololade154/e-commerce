@@ -617,7 +617,6 @@
 
   .custom-input {
     width: 260px;
-
     padding: 10px 14px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -1139,7 +1138,6 @@
   }
   .avatar-image {
     width: 100%;
-    /* height: 450px; */
   }
   .testimonial-section h1 {
     text-transform: uppercase;
@@ -1265,7 +1263,7 @@
   .social-link {
     display: flex;
     align-items: flex-start;
-    /* align-items: center; */
+
     gap: 0.5rem;
   }
   .social-link a {
@@ -1307,8 +1305,8 @@
   .sign-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 15px 18px;
     margin-top: 65px;
   }
 
