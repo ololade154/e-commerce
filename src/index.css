@@ -109,7 +109,7 @@
   }
   .input input::placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
   }
 
@@ -587,6 +587,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0px 0px 0px 100px;
   }
   .sign-details {
@@ -693,6 +694,12 @@
     line-height: 1.2;
     color: #696969;
   }
+  .login-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 100px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
@@ -796,7 +803,7 @@
     border: none;
     outline: none;
     flex: 1;
-    font-size: 14px;
+    font-size: 16px;
     background-color: transparent;
   }
   input::placeholder {
@@ -1308,6 +1315,7 @@
     align-items: normal;
     padding: 15px 18px;
     margin-top: 65px;
+    flex-wrap: wrap;
   }
 
   .sign-details {
@@ -1325,6 +1333,7 @@
     display: flex;
     align-items: normal;
     flex-direction: column;
+
     gap: 0.7rem;
     width: 100%;
   }
