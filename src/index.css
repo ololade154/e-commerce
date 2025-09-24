@@ -805,6 +805,7 @@
     flex: 1;
     font-size: 16px;
     background-color: transparent;
+    color: #fff;
   }
   input::placeholder {
     color: white;
