@@ -1324,7 +1324,7 @@
   }
   .details {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     gap: 0.7rem;
     width: 100%;
