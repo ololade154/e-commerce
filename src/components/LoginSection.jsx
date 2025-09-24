@@ -13,7 +13,7 @@ function LoginSection() {
             create a new one
           </Link>
         </p>
-        <div className="Login-detail">
+        <div className="login-detail">
           <div>
             <div>
               <Label text="Enter Your Email or Phone" />
