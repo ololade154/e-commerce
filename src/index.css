@@ -22,7 +22,6 @@
     align-items: center;
     justify-content: space-between;
     height: 85px;
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -32,6 +31,7 @@
     margin-bottom: 55px;
   }
   .desktop-nav.transparent {
+    position: sticky;
     background-color: transparent;
   }
   .desktop-nav.non-transparent {
@@ -599,6 +599,7 @@
     flex-direction: column;
     gap: 1.5rem;
     align-items: flex-start;
+    width: 100%;
   }
   .details {
     display: flex;
@@ -616,6 +617,7 @@
 
   .custom-input {
     width: 260px;
+
     padding: 10px 14px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -1303,13 +1305,13 @@
     background-color: #e58411;
   }
   .sign-section {
-    /* display: flex;
-    flex-direction: column; */
-
-    padding: 0px 15px 12px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     margin-top: 65px;
-    border: 2px solid red;
   }
+
   .sign-details {
     display: flex;
     flex-direction: column;
@@ -1320,12 +1322,14 @@
     flex-direction: column;
     gap: 0.7rem;
     align-items: flex-start;
+    width: 100%;
   }
   .details {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     gap: 0.7rem;
+    width: 100%;
   }
   .sign-image {
     display: none;
