@@ -809,15 +809,15 @@
   }
   input::placeholder {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
   }
 
   .search-icon {
     cursor: pointer;
     background-color: #e58411;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,7 +8,7 @@ function Input() {
           <input placeholder="Search furniture"></input>
         </div>
         <div className="search-icon">
-          <Search width={18} color="white" />
+          <Search width={16} color="white" />
         </div>
       </div>
     </div>
