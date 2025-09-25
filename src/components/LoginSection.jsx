@@ -9,7 +9,7 @@ function LoginSection() {
         <h1>Login</h1>
         <p>
           Do not have an account
-          <Link className="Login-link" to="#">
+          <Link className="login-link" to="#">
             create a new one
           </Link>
         </p>
@@ -38,7 +38,10 @@ function LoginSection() {
           </div>
         </div>
 
-        <Buttons className="signup-button">Create Account</Buttons>
+        <Buttons className="login-button">Login</Buttons>
+        <Link to="#" className="password-link">
+          Forgot Your Password
+        </Link>
       </div>
       <div className="signup-image">
         <img
