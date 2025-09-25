@@ -32,7 +32,7 @@ function NavBar() {
               <Link to="/SignUp">Furniture</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">Shop</Link>
+              <Link to="/Login">Shop</Link>
             </li>
             <li className="nav-item">
               <Link to="#">About Us</Link>
@@ -78,10 +78,10 @@ function NavBar() {
               <Link to="/SignUp">Furniture</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">Shop</Link>
+              <Link to="/Login">Shop</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">About Us</Link>
+              <Link to="/">About Us</Link>
             </li>
             <li className="nav-item">
               <Link to="#">Contact</Link>

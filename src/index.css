@@ -731,42 +731,6 @@
     font-weight: 400;
   }
 
-  .inputs-container {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .custom-input {
-    width: 100%;
-    padding: 10px 18px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    outline: none;
-    box-sizing: border-box;
-  }
-
-  .inputs-container.with-icon .custom-input {
-    padding-right: 40px;
-  }
-
-  .input-icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  .form-label,
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #696969;
-  }
   .login-button {
     width: 100%;
     padding: 10px 14px;
@@ -1393,9 +1357,9 @@
     gap: 1.9rem;
     justify-content: space-between;
   }
-  .signup-nav {
+  /* .signup-nav {
     background-color: #e58411;
-  }
+  } */
   .sign-section {
     display: flex;
     flex-direction: column;
@@ -1420,7 +1384,6 @@
     display: flex;
     align-items: normal;
     flex-direction: column;
-
     gap: 0.7rem;
     width: 100%;
   }
@@ -1513,5 +1476,62 @@
     font-size: 9px;
     line-height: 1.2;
     color: #696969;
+  }
+  .login-section {
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    padding: 15px 18px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .login-details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: normal; */
+  }
+  .login-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: normal;
+    width: 100%;
+  }
+  .login-details h1 {
+    margin-bottom: 0.5rem;
+    color: #1e1e1e;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .login-details p {
+    margin-bottom: 1.7rem;
+    color: #696969;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .login-link {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #282828;
+    border-radius: 50px;
+    outline: none;
+    background-color: #282828;
+    color: #fff;
+    margin-top: 1.5rem;
+  }
+  .password-link {
+    text-align: center;
+    margin-top: 1.3rem;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
   }
 }
