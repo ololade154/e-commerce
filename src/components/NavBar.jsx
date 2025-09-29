@@ -84,7 +84,7 @@ function NavBar() {
               <Link to="/">About Us</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">Contact</Link>
+              <Link to="/ProductPage">Contact</Link>
             </li>
             <li className="nav-item">
               <Cart className="cart-icon" width={23} color="white" />
