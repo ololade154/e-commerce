@@ -8,7 +8,7 @@ function Products() {
         .map((item) => (
           <div key={item.id} className="furniture-item">
             <div>
-              <img src={item.src} alt={item.name} width="140" />
+              <img src={item.src} alt={item.name} />
             </div>
             <div className="furniture-details">
               <p>{item.category}</p>

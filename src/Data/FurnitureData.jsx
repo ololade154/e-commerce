@@ -11,7 +11,7 @@ const furnitureData = [
     name: 'Wooden Chair',
     category: 'chair',
     price: 35000,
-    src: '/assets/chair2.svg',
+    src: '/assets/sofa2.svg',
   },
   {
     id: 3,
@@ -32,14 +32,14 @@ const furnitureData = [
     name: 'Magga',
     category: 'sofa',
     price: 150000,
-    src: '/assets/chair4.svg',
+    src: '/assets/sofa1.svg',
   },
   {
     id: 6,
     name: 'Wooden Chair',
     category: 'chair',
     price: 35000,
-    src: '/assets/chair2.svg',
+    src: '/assets/sofa3.svg',
   },
   {
     id: 7,
