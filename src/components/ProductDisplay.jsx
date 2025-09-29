@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import furnitureData from '../Data/FurnitureData';
+
 import Button from './Button';
 import Arrow from './Arrow';
 function ProductDisplay() {
@@ -20,6 +21,7 @@ function ProductDisplay() {
           <span>Lamps</span>
         </div>
       </div>
+
       <div className="furniture-data">
         {furnitureData
           .filter((item, index) => index < 4)

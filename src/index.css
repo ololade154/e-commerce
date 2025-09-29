@@ -750,6 +750,55 @@
     font-size: 15px;
     font-weight: 400;
   }
+  .product-section {
+    padding: 50px 80px;
+  }
+  .product-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .product-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #00000026;
+    padding: 6px 8px 6px 15px;
+    border-radius: 30px;
+    width: 650px;
+    background-color: white;
+  }
+
+  .product-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+  }
+  .product-input input::placeholder {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product-section-header {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .products-data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
@@ -1533,5 +1582,55 @@
     color: #000;
     font-size: 15px;
     font-weight: 400;
+  }
+  .product-section {
+    padding: 15px 18px;
+  }
+  .product-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .product-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #00000026;
+    padding: 6px 8px 6px 15px;
+    border-radius: 30px;
+    width: 300px;
+    background-color: white;
+  }
+
+  .product-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+  }
+  .product-input input::placeholder {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product-section-header {
+    text-align: center;
+    margin-top: 65px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .products-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35px;
   }
 }
