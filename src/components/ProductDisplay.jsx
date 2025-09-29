@@ -47,7 +47,7 @@ function ProductDisplay() {
       </div>
       <div className="view-links">
         <div>
-          <Link className="view-link" to="#">
+          <Link className="view-link" to="/ProductPage">
             View All
           </Link>
         </div>
