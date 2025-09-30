@@ -60,21 +60,21 @@ const furnitureData = [
     name: 'Modern Sofa',
     category: 'chair',
     price: 150000,
-    src: '/assets/Chair1.svg',
+    src: '/assets/sofa5.svg',
   },
   {
     id: 10,
     name: 'Wooden Chair',
     category: 'chair',
     price: 35000,
-    src: '/assets/chair2.svg',
+    src: '/assets/sofa4.svg',
   },
   {
     id: 11,
     name: 'Coffee Table',
     category: 'chair',
     price: 45000,
-    src: '/assets/chair3.svg',
+    src: '/assets/chair5.svg',
   },
   {
     id: 12,
@@ -88,14 +88,14 @@ const furnitureData = [
     name: 'Modern Sofa',
     category: 'chair',
     price: 150000,
-    src: '/assets/Chair1.svg',
+    src: '/assets/chair6.svg',
   },
   {
     id: 14,
     name: 'Wooden Chair',
     category: 'chair',
     price: 35000,
-    src: '/assets/chair2.svg',
+    src: '/assets/chair5.svg',
   },
   {
     id: 15,
@@ -109,7 +109,7 @@ const furnitureData = [
     name: 'King Size Bed',
     category: 'chair',
     price: 200000,
-    src: 'assets/chair4.svg',
+    src: 'assets/chair2.svg',
   },
 ];
 
