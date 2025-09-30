@@ -3,6 +3,7 @@ import HomePage from './Pages/HomePage';
 import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
 import ProductPage from './Pages/ProductPage';
+import CartPage from './Pages/CartPage';
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
         <Route path="login" element={<Login />} />
         <Route path="productpage" element={<ProductPage />} />
+        <Route path="CartPage" element={<CartPage />} />
       </Routes>
     </BrowserRouter>
   );
