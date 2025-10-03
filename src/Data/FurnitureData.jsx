@@ -25,7 +25,7 @@ const furnitureData = [
     name: 'King Size Bed',
     category: 'chair',
     price: 200000,
-    src: 'assets/chair4.svg',
+    src: '/assets/chair4.svg',
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const furnitureData = [
     name: 'King Size Bed',
     category: 'chair',
     price: 200000,
-    src: 'assets/chair4.svg',
+    src: '/assets/chair4.svg',
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ const furnitureData = [
     name: 'King Size Bed',
     category: 'chair',
     price: 200000,
-    src: 'assets/chair4.svg',
+    src: '/assets/chair4.svg',
   },
   {
     id: 13,
@@ -109,7 +109,7 @@ const furnitureData = [
     name: 'King Size Bed',
     category: 'chair',
     price: 200000,
-    src: 'assets/chair2.svg',
+    src: '/assets/chair2.svg',
   },
 ];
 

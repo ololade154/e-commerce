@@ -1,7 +1,7 @@
 import ProductInput from './ProductInput';
 import Products from './Products';
 
-function ProductSection() {
+function ProductSection({ addToCart }) {
   return (
     <div className="product-section">
       <h1 className="product-section-header">Our Collection Of Products</h1>
@@ -10,7 +10,7 @@ function ProductSection() {
         placeholder="Search An Item"
         inputClass="product-input"
       />
-      <Products />
+      <Products addToCart={addToCart} />
     </div>
   );
 }

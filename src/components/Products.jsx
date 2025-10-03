@@ -1,6 +1,6 @@
 import Button from './Button';
 import furnitureData from '../Data/FurnitureData';
-function Products() {
+function Products({ addToCart }) {
   return (
     <div className="products-data">
       {furnitureData
@@ -18,7 +18,7 @@ function Products() {
                   <p>{item.price}</p>
                 </div>
                 <div>
-                  <Button />
+                  <Button onClick={() => addToCart(item)} />
                 </div>
               </div>
             </div>

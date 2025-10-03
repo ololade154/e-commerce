@@ -1,8 +1,8 @@
 import Add from './Add';
-function Button() {
+function Button({ onClick }) {
   return (
     <div>
-      <button>
+      <button onClick={onClick}>
         <Add width={15} />
       </button>
     </div>

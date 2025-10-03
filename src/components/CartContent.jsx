@@ -1,28 +1,30 @@
 import CloseIcon from './CloseIcon';
 
-function CartContent() {
+function CartContent({ cartItems }) {
   return (
     <div className="cart">
       <div className="cart-header">
-        <p>Product </p>
+        <p>Product</p>
         <div className="header-content">
           <p>Price</p>
-          <p>Quality</p>
+          <p>Quantity</p>
           <p>Total</p>
         </div>
       </div>
-      <div className="cart-content">
-        <div className="item-image">
-          <CloseIcon width={20} color="black" />
-          <img src="/assets/chair5.svg" className="item" />
-          <p>name</p>
+      {cartItems.map((item, index) => (
+        <div key={index} className="cart-content">
+          <div className="item-image">
+            <CloseIcon width={20} color="black" />
+            <img src={item.src} alt={item.name} className="item" />
+            <p>{item.name}</p>
+          </div>
+          <div className="item-price">
+            <p>{item.price}</p>
+            <p>1</p>
+            <p>{item.price}</p>
+          </div>
         </div>
-        <div className="item-price">
-          <p>20000</p>
-          <p>Sum</p>
-          <p>4000</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

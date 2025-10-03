@@ -43,7 +43,9 @@ function NavBar() {
           </ul>
         </div>
         <div>
-          <Cart className="cart-icon" width={25} color="white" />
+          <Link to="/CartPage">
+            <Cart className="cart-icon" width={25} color="white" />
+          </Link>
         </div>
       </div>
       <div className="mobile-nav">

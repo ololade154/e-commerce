@@ -1,5 +1,5 @@
 import ExperienceSection from '../components/ExperienceSection';
-import Footer from '../components/Footer.';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import HomeContent from '../components/HomeContent';
 import MaterialSection from '../components/MaterialSection';
