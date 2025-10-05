@@ -1792,6 +1792,7 @@
     border-radius: 4px;
     font-size: 15px;
     text-align: center;
+    color: #000;
     background-color: transparent;
   }
   .quantity-buttons p {
