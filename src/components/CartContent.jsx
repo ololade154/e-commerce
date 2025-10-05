@@ -1,6 +1,6 @@
 import CloseIcon from './CloseIcon';
 
-function CartContent({ cartItems }) {
+function CartContent({ cartItems, removeFromCart }) {
   return (
     <div className="cart">
       <div className="cart-header">
@@ -14,7 +14,11 @@ function CartContent({ cartItems }) {
       {cartItems.map((item, index) => (
         <div key={index} className="cart-content">
           <div className="item-image">
-            <CloseIcon width={20} color="black" />
+            <CloseIcon
+              width={20}
+              color="black"
+              onClick={() => removeFromCart(index)}
+            />
             <img src={item.src} alt={item.name} className="item" />
             <p>{item.name}</p>
           </div>

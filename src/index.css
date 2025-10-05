@@ -831,13 +831,17 @@
     gap: 2rem;
   }
   .cart-content {
-    background-color: blue;
+    /* background-color: blue; */
     padding: 15px 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* width: 100%; */
   }
+  .cart-content:not(:last-child) {
+    border-bottom: 2px solid green;
+  }
+
   .item-image {
     display: flex;
     align-items: center;
@@ -853,10 +857,6 @@
     align-items: center;
     gap: 2.5rem;
   }
-
-  /* .car-content{
-    
-  } */
 }
 
 @media (min-width: 100px) and (max-width: 650px) {

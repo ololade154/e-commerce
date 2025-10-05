@@ -6,12 +6,10 @@ import Login from './Pages/Login';
 import ProductPage from './Pages/ProductPage';
 import CartPage from './Pages/CartPage';
 function App() {
-  const [cartItems, setCartItems] = useState([]);
-  // Load cart from localStorage when app starts
-  useEffect(() => {
+  const [cartItems, setCartItems] = useState(() => {
     const savedCart = localStorage.getItem('cartItems');
-    if (savedCart) setCartItems(JSON.parse(savedCart));
-  }, []);
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
@@ -21,6 +19,11 @@ function App() {
     console.log('Adding to cart:', item);
     setCartItems((prev) => [...prev, item]);
   };
+  const removeFromCart = (indexToRemove) => {
+    const updatedCart = cartItems.filter((_, index) => index !== indexToRemove);
+    setCartItems(updatedCart);
+  };
+
   return (
     <BrowserRouter>
       <Routes>
@@ -31,7 +34,12 @@ function App() {
           path="productpage"
           element={<ProductPage addToCart={addToCart} />}
         />
-        <Route path="CartPage" element={<CartPage cartItems={cartItems} />} />
+        <Route
+          path="CartPage"
+          element={
+            <CartPage cartItems={cartItems} removeFromCart={removeFromCart} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
