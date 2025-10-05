@@ -37,9 +37,9 @@ function ProductDisplay() {
                   <div>
                     <p>{item.price}</p>
                   </div>
-                  <div>
-                    <Button />
-                  </div>
+                  {/* <div>
+                    <Button onClick={() => addToCart(item)} />
+                  </div> */}
                 </div>
               </div>
             </div>

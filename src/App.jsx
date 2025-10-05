@@ -15,13 +15,43 @@ function App() {
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
+
   const addToCart = (item) => {
-    console.log('Adding to cart:', item);
-    setCartItems((prev) => [...prev, item]);
+    setCartItems((prev) => {
+      const existingItem = prev.find((i) => i.name === item.name);
+      if (existingItem) {
+        // If item already in cart, increase quantity
+        return prev.map((i) =>
+          i.name === item.name ? { ...i, quantity: i.quantity + 1 } : i
+        );
+      }
+      // If new item, add with quantity 1
+      return [...prev, { ...item, quantity: 1 }];
+    });
   };
+
+  // Remove from cart
   const removeFromCart = (indexToRemove) => {
-    const updatedCart = cartItems.filter((_, index) => index !== indexToRemove);
-    setCartItems(updatedCart);
+    setCartItems((prev) => prev.filter((_, i) => i !== indexToRemove));
+  };
+  // Increase quantity
+  const increaseQuantity = (index) => {
+    setCartItems((prev) =>
+      prev.map((item, i) =>
+        i === index ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+
+  // Decrease quantity
+  const decreaseQuantity = (index) => {
+    setCartItems((prev) =>
+      prev.map((item, i) =>
+        i === index && item.quantity > 1
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+    );
   };
 
   return (
@@ -37,7 +67,12 @@ function App() {
         <Route
           path="CartPage"
           element={
-            <CartPage cartItems={cartItems} removeFromCart={removeFromCart} />
+            <CartPage
+              cartItems={cartItems}
+              removeFromCart={removeFromCart}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
           }
         />
       </Routes>

@@ -5,6 +5,7 @@ const furnitureData = [
     category: 'chair',
     price: 150000,
     src: '/assets/Chair1.svg',
+    quantity: 1,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const furnitureData = [
     category: 'chair',
     price: 35000,
     src: '/assets/sofa2.svg',
+    quantity: 1,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const furnitureData = [
     category: 'chair',
     price: 45000,
     src: '/assets/chair3.svg',
+    quantity: 1,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const furnitureData = [
     category: 'chair',
     price: 200000,
     src: '/assets/chair4.svg',
+    quantity: 1,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const furnitureData = [
     category: 'sofa',
     price: 150000,
     src: '/assets/sofa1.svg',
+    quantity: 1,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const furnitureData = [
     category: 'chair',
     price: 35000,
     src: '/assets/sofa3.svg',
+    quantity: 1,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const furnitureData = [
     category: 'chair',
     price: 45000,
     src: '/assets/chair3.svg',
+    quantity: 1,
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const furnitureData = [
     category: 'chair',
     price: 200000,
     src: '/assets/chair4.svg',
+    quantity: 1,
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const furnitureData = [
     category: 'chair',
     price: 150000,
     src: '/assets/sofa5.svg',
+    quantity: 1,
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const furnitureData = [
     category: 'chair',
     price: 35000,
     src: '/assets/sofa4.svg',
+    quantity: 1,
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ const furnitureData = [
     category: 'chair',
     price: 45000,
     src: '/assets/chair5.svg',
+    quantity: 1,
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ const furnitureData = [
     category: 'chair',
     price: 200000,
     src: '/assets/chair4.svg',
+    quantity: 1,
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ const furnitureData = [
     category: 'chair',
     price: 150000,
     src: '/assets/chair6.svg',
+    quantity: 1,
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ const furnitureData = [
     category: 'chair',
     price: 35000,
     src: '/assets/chair5.svg',
+    quantity: 1,
   },
   {
     id: 15,
@@ -103,6 +117,7 @@ const furnitureData = [
     category: 'chair',
     price: 45000,
     src: '/assets/chair3.svg',
+    quantity: 1,
   },
   {
     id: 16,
@@ -110,6 +125,7 @@ const furnitureData = [
     category: 'chair',
     price: 200000,
     src: '/assets/chair2.svg',
+    quantity: 1,
   },
 ];
 
