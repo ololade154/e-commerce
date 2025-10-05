@@ -1,11 +1,20 @@
 import Button from './Button';
 import furnitureData from '../Data/FurnitureData';
-function Products({ addToCart }) {
+
+function Products({ addToCart, searchTerm }) {
+  const filteredData =
+    searchTerm.trim() === ''
+      ? furnitureData.filter((_, index) => index < 15)
+      : furnitureData
+          .filter((item) =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+          .filter((_, index) => index < 15);
+
   return (
     <div className="products-data">
-      {furnitureData
-        .filter((item, index) => index < 15)
-        .map((item) => (
+      {filteredData.length > 0 ? (
+        filteredData.map((item) => (
           <div key={item.id} className="furniture-item">
             <div>
               <img src={item.src} alt={item.name} />
@@ -23,8 +32,12 @@ function Products({ addToCart }) {
               </div>
             </div>
           </div>
-        ))}
+        ))
+      ) : (
+        <p>No matching products found.</p>
+      )}
     </div>
   );
 }
+
 export default Products;
