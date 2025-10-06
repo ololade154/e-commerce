@@ -1926,7 +1926,7 @@
     text-align: center;
     font-size: 14px;
   }
-  .cart-icon {
+  /* .cart-icon {
     position: relative;
   }
   .cart-details {
@@ -1940,5 +1940,28 @@
     border-radius: 50%;
     color: #fff;
     font-size: 16px;
+  } */
+  .cart-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cart-icon {
+    display: block;
+  }
+
+  .cart-details {
+    position: absolute;
+    top: -6px; /* slightly above the icon */
+    right: -6px; /* slightly to the right */
+    background-color: #e58411;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
   }
 }
