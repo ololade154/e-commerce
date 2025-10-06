@@ -46,10 +46,12 @@ function NavBar({ cartItems }) {
         </div>
         <div>
           <Link to="/CartPage">
-            <Cart className="cart-icon" width={25} color="white" />
-            {cartItems && cartItems.length > 0 && (
-              <p className="cart-details">{cartItems.length}</p>
-            )}
+            <div className="cart-wrapper">
+              <Cart className="cart-icon" width={25} color="white" />
+              {cartItems && cartItems.length > 0 && (
+                <p className="cart-details">{cartItems.length}</p>
+              )}
+            </div>
           </Link>
         </div>
       </div>

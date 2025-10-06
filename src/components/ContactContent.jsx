@@ -41,7 +41,7 @@ function ContactContent() {
               <div>
                 <Inputs
                   placeholder="Phone Number"
-                  type="number"
+                  type="text"
                   className="contact-input"
                 />
               </div>
