@@ -23,8 +23,10 @@ function NavBar({ cartItems }) {
           pathname !== '/' ? 'non-transparent' : 'transparent'
         }`}
       >
-        <div className="logo">
-          <Logo />
+        <div>
+          <Link to="/" className="logo-link">
+            <Logo />
+          </Link>
         </div>
         <div>
           <ul className="nav-link">
@@ -45,7 +47,6 @@ function NavBar({ cartItems }) {
         <div>
           <Link to="/CartPage">
             <Cart className="cart-icon" width={25} color="white" />
-
             {cartItems && cartItems.length > 0 && (
               <p className="cart-details">{cartItems.length}</p>
             )}
@@ -58,8 +59,10 @@ function NavBar({ cartItems }) {
             pathname !== '/' ? 'non-transparent with-margin' : 'transparent'
           }`}
         >
-          <div className="logo">
-            <Logo />
+          <div>
+            <Link to="/" className="logo-link">
+              <Logo />
+            </Link>
           </div>
           <div className="menu-icon">
             <MenuIcon
@@ -95,6 +98,9 @@ function NavBar({ cartItems }) {
             <li className="nav-item">
               <Link to="/CartPage">
                 <Cart className="cart-icon" width={23} color="white" />
+                {cartItems && cartItems.length > 0 && (
+                  <p className="cart-details">{cartItems.length}</p>
+                )}
               </Link>
             </li>
           </ul>
