@@ -57,12 +57,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="signup" element={<SignUp />} />
-        <Route path="login" element={<Login />} />
+        <Route index element={<HomePage cartItems={cartItems} />} />
+        <Route path="signup" element={<SignUp cartItems={cartItems} />} />
+        <Route path="login" element={<Login cartItems={cartItems} />} />
         <Route
           path="productpage"
-          element={<ProductPage addToCart={addToCart} />}
+          element={<ProductPage addToCart={addToCart} cartItems={cartItems} />}
         />
         <Route
           path="CartPage"

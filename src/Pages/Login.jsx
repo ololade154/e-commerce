@@ -2,10 +2,10 @@ import NavBar from '../components/NavBar';
 import LoginSection from '../components/LoginSection';
 import Footer from '../components/Footer';
 
-function Login() {
+function Login({ cartItems }) {
   return (
     <div>
-      <NavBar />
+      <NavBar cartItems={cartItems} />
       <LoginSection />
       <Footer />
     </div>

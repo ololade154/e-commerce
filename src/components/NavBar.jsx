@@ -5,7 +5,7 @@ import Cart from './cart';
 import MenuIcon from './MenuIcon';
 import CloseIcon from './CloseIcon';
 
-function NavBar() {
+function NavBar({ cartItems }) {
   const [isOpen, setIsOpen] = useState(false);
   function openMenu() {
     setIsOpen(true);
@@ -45,6 +45,10 @@ function NavBar() {
         <div>
           <Link to="/CartPage">
             <Cart className="cart-icon" width={25} color="white" />
+
+            {cartItems && cartItems.length > 0 && (
+              <p className="cart-details">{cartItems.length}</p>
+            )}
           </Link>
         </div>
       </div>

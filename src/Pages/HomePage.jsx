@@ -4,10 +4,10 @@ import Hero from '../components/Hero';
 import HomeContent from '../components/HomeContent';
 import MaterialSection from '../components/MaterialSection';
 import Testimonial from '../components/Testimonial';
-function HomePage() {
+function HomePage({ cartItems }) {
   return (
     <main className="main">
-      <Hero />
+      <Hero cartItems={cartItems} />
       <HomeContent />
       <ExperienceSection />
       <MaterialSection />

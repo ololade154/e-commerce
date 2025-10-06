@@ -9,7 +9,7 @@ function CartPage({
 }) {
   return (
     <div>
-      <NavBar />
+      <NavBar cartItems={cartItems} />
       <CartContent
         cartItems={cartItems}
         removeFromCart={removeFromCart}
