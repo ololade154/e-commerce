@@ -929,6 +929,7 @@
     display: flex;
     padding: 10px 25px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .contact-content > div:not(:last-child) {
     border-bottom: 1px solid #00000026;
