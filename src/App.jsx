@@ -5,6 +5,7 @@ import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
 import ProductPage from './Pages/ProductPage';
 import CartPage from './Pages/CartPage';
+import Contact from './Pages/Contact';
 function App() {
   const [cartItems, setCartItems] = useState(() => {
     const savedCart = localStorage.getItem('cartItems');
@@ -75,6 +76,7 @@ function App() {
             />
           }
         />
+        <Route path="Contact" element={<Contact cartItems={cartItems} />} />
       </Routes>
     </BrowserRouter>
   );

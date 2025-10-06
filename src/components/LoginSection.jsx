@@ -19,7 +19,7 @@ function LoginSection() {
               <Label text="Enter Your Email or Phone" />
               <Inputs
                 placeholder="michael.joe@gmail.com"
-                className="custom-input"
+                className="login-input"
               />
             </div>
           </div>
@@ -32,7 +32,7 @@ function LoginSection() {
                 showEye={true}
                 eyeWidth={22}
                 eyeColor="#696969"
-                className="custom-input"
+                className="login-input"
               />
             </div>
           </div>

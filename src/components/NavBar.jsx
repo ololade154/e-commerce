@@ -40,7 +40,7 @@ function NavBar({ cartItems }) {
               <Link to="/ProductPage">Shop</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">Contact</Link>
+              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -93,7 +93,7 @@ function NavBar({ cartItems }) {
               <Link to="/Productpage">Shop</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">Contact</Link>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li className="nav-item">
               <Link to="/CartPage">
