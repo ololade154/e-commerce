@@ -31,13 +31,13 @@ function NavBar({ cartItems }) {
         <div>
           <ul className="nav-link">
             <li className="nav-item ">
-              <Link to="/SignUp">Furniture</Link>
+              <Link to="/SignUp">SignUp</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Login">Shop</Link>
+              <Link to="/Login">Login</Link>
             </li>
             <li className="nav-item">
-              <Link to="#">About Us</Link>
+              <Link to="/ProductPage">Shop</Link>
             </li>
             <li className="nav-item">
               <Link to="#">Contact</Link>
@@ -84,16 +84,16 @@ function NavBar({ cartItems }) {
               />
             </li>
             <li className="nav-item ">
-              <Link to="/SignUp">Furniture</Link>
+              <Link to="/SignUp">SignUp</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Login">Shop</Link>
+              <Link to="/Login">Login</Link>
             </li>
             <li className="nav-item">
-              <Link to="/">About Us</Link>
+              <Link to="/Productpage">Shop</Link>
             </li>
             <li className="nav-item">
-              <Link to="/ProductPage">Contact</Link>
+              <Link to="#">Contact</Link>
             </li>
             <li className="nav-item">
               <Link to="/CartPage">
