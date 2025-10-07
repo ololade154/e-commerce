@@ -3,9 +3,11 @@ import Footer from '../components/Footer';
 import ContactContent from '../components/ContactContent';
 function Contact({ cartItems }) {
   return (
-    <div>
+    <div className="page">
       <NavBar cartItems={cartItems} />
-      <ContactContent />
+      <main className="main-content">
+        <ContactContent />
+      </main>
       <Footer />
     </div>
   );

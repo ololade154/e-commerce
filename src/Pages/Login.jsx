@@ -4,9 +4,11 @@ import Footer from '../components/Footer';
 
 function Login({ cartItems }) {
   return (
-    <div>
+    <div className="page">
       <NavBar cartItems={cartItems} />
-      <LoginSection />
+      <main className="main-content">
+        <LoginSection />
+      </main>
       <Footer />
     </div>
   );

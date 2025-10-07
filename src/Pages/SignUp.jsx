@@ -4,9 +4,11 @@ import SignSection from '../components/SignSection';
 
 function SignUp({ cartItems }) {
   return (
-    <div>
+    <div className="page">
       <NavBar cartItems={cartItems} />
-      <SignSection />
+      <main className="main-content">
+        <SignSection />
+      </main>
       <Footer />
     </div>
   );

@@ -8,14 +8,16 @@ function CartPage({
   decreaseQuantity,
 }) {
   return (
-    <div>
+    <div className="page">
       <NavBar cartItems={cartItems} />
-      <CartContent
-        cartItems={cartItems}
-        removeFromCart={removeFromCart}
-        increaseQuantity={increaseQuantity}
-        decreaseQuantity={decreaseQuantity}
-      />
+      <main className="main-content">
+        <CartContent
+          cartItems={cartItems}
+          removeFromCart={removeFromCart}
+          increaseQuantity={increaseQuantity}
+          decreaseQuantity={decreaseQuantity}
+        />
+      </main>
       <Footer />
     </div>
   );

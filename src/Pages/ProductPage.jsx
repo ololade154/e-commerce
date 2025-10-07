@@ -3,9 +3,11 @@ import ProductSection from '../components/ProductSection';
 import Footer from '../components/Footer';
 function ProductPage({ addToCart, cartItems }) {
   return (
-    <div>
+    <div className="page">
       <NavBar cartItems={cartItems} />
-      <ProductSection addToCart={addToCart} />
+      <main className="main-content">
+        <ProductSection addToCart={addToCart} />
+      </main>
       <Footer />
     </div>
   );

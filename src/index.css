@@ -7,7 +7,11 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 .hero {
   background-image: url('/assets/background.svg');
   background-repeat: no-repeat;
@@ -15,6 +19,15 @@
   background-position: center;
   position: relative;
   height: 800px;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* pushes footer to bottom naturally */
 }
 /* Desktop screen */
 @media (min-width: 650px) {
@@ -1894,6 +1907,13 @@
     padding: 15px 18px;
     min-height: 100vh;
   }
+  .empty-cart-message {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: #777;
+  }
+
   .cart-header {
     padding: 20px 15px;
     display: flex;
