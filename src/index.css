@@ -1765,9 +1765,10 @@
   .login-section {
     display: flex;
     align-items: normal;
+    min-height: 100vh;
     flex-direction: column;
-    padding: 15px 18px;
     margin-top: 65px;
+    padding: 15px 18px;
     flex-wrap: wrap;
   }
   .login-details {
