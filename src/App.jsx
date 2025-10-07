@@ -21,12 +21,11 @@ function App() {
     setCartItems((prev) => {
       const existingItem = prev.find((i) => i.name === item.name);
       if (existingItem) {
-        // If item already in cart, increase quantity
         return prev.map((i) =>
           i.name === item.name ? { ...i, quantity: i.quantity + 1 } : i
         );
       }
-      // If new item, add with quantity 1
+
       return [...prev, { ...item, quantity: 1 }];
     });
   };

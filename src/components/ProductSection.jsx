@@ -3,11 +3,19 @@ import ProductInput from './ProductInput';
 import Products from './Products';
 
 function ProductSection({ addToCart }) {
-  const [typedText, setTypedText] = useState(''); // what user types
-  const [searchQuery, setSearchQuery] = useState(''); // what we actually search
+  const [typedText, setTypedText] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [message, setMessage] = useState('');
+  const [show, setShow] = useState(false);
 
   const handleSearchClick = () => {
     setSearchQuery(typedText.trim()); // update when icon is clicked
+  };
+  const handleAddToCart = (item) => {
+    addToCart(item);
+    setMessage(`${item.name} has been added to your cart `);
+    setShow(true);
+    setTimeout(() => setShow(false), 1000);
   };
 
   return (
@@ -19,11 +27,13 @@ function ProductSection({ addToCart }) {
         placeholder="Search an item"
         inputClass="product-input"
         value={typedText}
-        onChange={(e) => setTypedText(e.target.value)} // update while typing
-        onSearch={handleSearchClick} // 👈 send function to handle click
+        onChange={(e) => setTypedText(e.target.value)}
+        onSearch={handleSearchClick}
       />
-
-      <Products addToCart={addToCart} searchTerm={searchQuery} />
+      {message && (
+        <div className={`cart-message ${show ? 'show' : ''}`}>{message}</div>
+      )}
+      <Products addToCart={handleAddToCart} searchTerm={searchQuery} />
     </div>
   );
 }
