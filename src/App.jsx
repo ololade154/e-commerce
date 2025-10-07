@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './Pages/HomePage';
 import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
@@ -56,6 +57,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route index element={<HomePage cartItems={cartItems} />} />
         <Route path="signup" element={<SignUp cartItems={cartItems} />} />
