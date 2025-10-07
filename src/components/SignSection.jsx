@@ -10,7 +10,7 @@ function SignSection() {
         <h1>Signup</h1>
         <p>
           Already have an Account?
-          <Link className="signup-link" to="#">
+          <Link className="signup-link" to="/Login">
             Login
           </Link>
         </p>

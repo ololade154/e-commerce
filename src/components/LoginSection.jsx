@@ -9,7 +9,7 @@ function LoginSection() {
         <h1>Login</h1>
         <p>
           Do not have an account
-          <Link className="login-link" to="#">
+          <Link className="login-link" to="/SignUp">
             create a new one
           </Link>
         </p>
