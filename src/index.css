@@ -840,6 +840,12 @@ body {
     flex-direction: column;
     border-radius: 15px;
   }
+  .empty-cart-message {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: #777;
+  }
   .cart-header {
     padding: 20px;
     display: flex;
