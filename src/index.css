@@ -843,7 +843,7 @@ body {
   .empty-cart-message {
     text-align: center;
     padding: 40px 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #777;
   }
   .cart-header {
