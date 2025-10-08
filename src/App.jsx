@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+// import { useScrollToTop } from './Hooks/CustomHook';
+
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './Pages/HomePage';
 import SignUp from './Pages/SignUp';
