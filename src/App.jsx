@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-// import { useScrollToTop } from './Hooks/CustomHook';
-
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './Pages/HomePage';
 import SignUp from './Pages/SignUp';
@@ -9,6 +7,7 @@ import Login from './Pages/Login';
 import ProductPage from './Pages/ProductPage';
 import CartPage from './Pages/CartPage';
 import Contact from './Pages/Contact';
+
 function App() {
   const [cartItems, setCartItems] = useState(() => {
     const savedCart = localStorage.getItem('cartItems');
